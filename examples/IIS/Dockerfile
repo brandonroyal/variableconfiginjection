@@ -5,7 +5,7 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
 ADD https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/live/windows-server-container-tools/Wait-Service/Wait-Service.ps1 /
 
 # Inject-Variables added here
-ADD https://raw.githubusercontent.com/Inject-Variables.ps1
+ADD https://raw.githubusercontent.com/BrandonRoyal/variableconfiginjection/master/Inject-Variables.ps1
 
 # Install Windows features for IIS
 RUN Add-WindowsFeature Web-server, NET-Framework-45-ASPNET, Web-Asp-Net45
